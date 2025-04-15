@@ -54,9 +54,60 @@ class Trie:
         return True
         
 
+# class TrieNode: 
+#     def __init__(self):
+#         self.val = ""
+#         self.children = {} 
+#         self.end= False
+        
+# class PrefixTree:
 
+#     def __init__(self):
+#         self.words = [None]*26
+        
+#     def insert(self, word: str) -> None:
+#         if self.words[ord(word[0])- ord('a')]:
+#             root = self.words[ord(word[0])- ord('a')]
+#         else:
+#             root = TrieNode()
+#         root.val = word[0]
+#         current = root
+#         for c in word[1:]:
+#             if c not in current.children:
+#                 current.children[c] = TrieNode()
+#             current = current.children[c]
+#         current.end = True
+#         self.words[ord(word[0])- ord('a')]= root
+
+#     def search(self, word: str) -> bool:
+#         if not self.words[ord(word[0])-ord('a')] :
+#             return False
+#         root = self.words[ord(word[0])-ord('a')]
+#         for c in word[1:]:
+#             if c not in root.children: 
+#                 return False
+#             root = root.children[c]
+#         if root.end:
+#             return True
+#         return False
+
+        
+#     def startsWith(self, prefix: str) -> bool:
+#         if not self.words[ord(prefix[0])-ord('a')] :
+#             return False
+#         root = self.words[ord(prefix[0])-ord('a')]
+#         for c in prefix[1:]:
+#             if c not in root.children: 
+#                 return False
+#             root = root.children[c]
+        
+#         return True
+
+        
+        
 # Your Trie object will be instantiated and called as such:
 # obj = Trie()
 # obj.insert(word)
 # param_2 = obj.search(word)
 # param_3 = obj.startsWith(prefix)
+

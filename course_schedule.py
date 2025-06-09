@@ -50,6 +50,31 @@ class Solution:
 
 
 
+# class Solution:
+#     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+#         adj = collections.defaultdict(list)
+
+#         for edge in prerequisites: 
+#             adj[edge[0]].append(edge[1])
+
+#         def dfs(node,current):
+#             if current and node in current:
+#                 return False
+
+#             neighbors = adj[node]
+
+#             for i,nei in enumerate(neighbors):  
+#                 if not dfs(nei,current+[node]):
+#                     return False
+#             return True
+        
+
+#         for i in list(adj.keys()):
+#             if not dfs(i,[]):
+#                 return False
+        
+#         return True
+
         
         
 
